@@ -5,6 +5,7 @@
 #header {
     width: 100vw;
     height: fit-content;
+    max-height: 30vh;
     margin: 0 auto 1rem auto;
     display: flex;
     flex-flow: row nowrap;
