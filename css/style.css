@@ -27,3 +27,45 @@ li>a{
 #main>ul{
     list-style: none;
 }
+
+.sider-bar-btn{
+    position: absolute;
+    background-color: rgba(191, 125, 235, 0.342);
+    left: 0;
+    top: 50vh;
+    width: 1.2rem;
+    height: 3.2rem; 
+    border-top-right-radius: 0.4rem;
+    border-bottom-right-radius: 0.4rem;
+    margin: 0;
+    display: block;
+    z-index: 80;
+    transition: left 0.4s;
+}
+.sider-bar{
+    position: absolute;
+    left: -23vw;
+    top: 0;
+    margin: 0;
+    background-color: rgb(11, 195, 228);
+    height: 100vh;
+    width: 23vw;
+    /* display: none; */
+    z-index: 100;
+    transition: all 0.4s;
+}
+
+.sider-bar-btn:hover{
+    box-shadow: 1px 1px 10px #ccc;
+    background-color: rgb(191, 125, 235);
+    left: 23vw;
+}
+.sider-bar-btn:active{
+    box-shadow: -1px -1px 10px #ccc;
+    background-color: rgb(191, 125, 235);
+}
+
+.sider-bar-btn:hover+.sider-bar, .sider-bar:hover{
+   left: 0;
+}
+
