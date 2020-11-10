@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.all-btn{
+    border-radius: 0.1rem;
+    border: 0;
+    cursor: pointer;
+}
+
+.all-btn:hover{
+    box-shadow: 1px 1px 10px #ccc;
+}
+
+.split-bar{
+    border: 1px solid black;
+    height: 80%;
+}
+
+li>a{
+    text-decoration: none;
+    text-align: center;
+}
+
+#main>ul{
+    list-style: none;
+}
