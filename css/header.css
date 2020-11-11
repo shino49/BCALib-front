@@ -3,10 +3,9 @@
 }
 
 #header {
-    width: 100vw;
+    width: 100%;
     height: fit-content;
     max-height: 30vh;
-    margin: 0 auto 1rem auto;
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
@@ -16,7 +15,6 @@
 
 .logo{
     /* width: 30%; */
-    margin: 0;
     background-color: rgb(86, 240, 188);
     /* display: inline-block; */
     padding: 0 1rem 0 1rem;
@@ -26,6 +24,15 @@
     display: flex;
     justify-content: flex-start;
     align-items: center;
+}
+@keyframes logo-anime{
+    0%      {transform: scale(1);}
+    50%     {transform: scale(1.4);}
+    100%    {transform: scale(1);}
+
+}
+.logo:hover{
+    animation: logo-anime 1.8s;
 }
 
 .logo-img{
