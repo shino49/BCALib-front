@@ -15,7 +15,7 @@ body{
 
 #main{
     background-image: url("../img/bg1.jpg");
-    /* background-attachment: fixed; */
+    background-attachment: fixed;
     background-size: cover;
     width: 100%;
     min-height: 90vh; 
@@ -37,6 +37,17 @@ body{
     box-shadow: 1px 1px 10px #ccc;
 }
 
+.overlay {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 20;
+    background-color: rgba(0,0,0,.8);
+    display: none;
+  }
+
 .split-bar{
     border: 1px solid black;
     height: 80%;
@@ -55,7 +66,7 @@ li>a{
     position: fixed;
     background-color: rgba(191, 125, 235, 0.342);
     left: 0;
-    top: 50vh;
+    top: calc(50% - 1.6rem);
     width: 1.2rem;
     height: 3.2rem; 
     border-top-right-radius: 0.4rem;
@@ -93,3 +104,17 @@ li>a{
    left: 0;
 }
 
+.sider-bar-btn:hover~.overlay, .sider-bar:hover~.overlay{
+    display: block;
+}
+
+.pop-window{
+    position: absolute;
+    background-color: lightblue;
+    top: 28%;
+    left: 29%;
+    height: 44%;
+    width: 42%;
+    border-radius: 0.8rem;
+    display: none;
+}

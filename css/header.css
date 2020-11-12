@@ -66,6 +66,7 @@
     padding: 1.2rem 2rem;
     position: relative;
     transition: all 0.3s;
+    flex: 1 1 3rem;
 }
 
 .nav_ul_1>li:hover{
@@ -122,6 +123,9 @@
     border: lightcoral solid 0.1rem;
     border-radius: 1.2rem;
     height: 2.4rem;
+    margin-left: 1rem;
+    margin-right: 2rem;
+    flex: 1 1 14rem;
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-around;
@@ -146,5 +150,20 @@
     height: 1.8rem;
     margin-left: 2rem;
     flex: 1 1 auto;
+}
+
+.header-avator{
+    width: 2.5rem;
+    height: 2.5rem;
+    background-color: darkgrey;
+    margin-right: 1rem;
+    flex: 0 0 2.5rem;
+    position: relative;
+    border-radius: 50%;
+}
+.header-avator:hover .avator_ul{
+    display: block;
+    right: 0;
+    margin-top: 2.3rem;
 }
 
