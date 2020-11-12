@@ -18,7 +18,7 @@ body{
     background-attachment: fixed;
     background-size: cover;
     width: 100%;
-    min-height: 90vh; 
+    min-height: calc(100vh - 6rem); 
 }
 
 #footer{
@@ -32,10 +32,33 @@ body{
     border: 0;
     cursor: pointer;
 }
-
 .all-btn:hover{
     box-shadow: 1px 1px 10px #ccc;
 }
+.control-btn{
+    width: 2rem;
+    height: 2rem;
+    background-color: transparent;
+    flex: 0 0 auto;
+    border-radius: 1rem;
+}
+.control-btn:hover{
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.hidden{
+    display: none;
+}
+.visible{
+    display: block;
+}
+.hidden-withoutpos{
+    visibility: hidden;
+}
+.visible-withoutpos{
+    visibility: visible;
+}
+
 
 .overlay {
     position: fixed;
@@ -111,10 +134,12 @@ li>a{
 .pop-window{
     position: absolute;
     background-color: lightblue;
-    top: 28%;
-    left: 29%;
+    top: 50%;
+    left: 50%;
+    transform:translate(-50%,-50%);
     height: 44%;
     width: 42%;
     border-radius: 0.8rem;
     display: none;
+    z-index: 90;
 }

@@ -49,7 +49,7 @@
     background-color: aquamarine;
 }
 
-.nav_ul_1{
+.nav-ul-1{
     color: #2d3436;
     display: flex;
     flex-flow: row nowrap;
@@ -58,7 +58,7 @@
     height: 100%;
 }
 
-.nav_ul_1>li{
+.nav-ul-1>li{
     /* position: relative; */
     /* float: left; */
     background-color: transparent;
@@ -69,13 +69,13 @@
     flex: 1 1 3rem;
 }
 
-.nav_ul_1>li:hover{
+.nav-ul-1>li:hover{
     background-color: teal;
     border-radius: 0.2rem;
     box-shadow: 1px 1px 10px #ccc;
     cursor: pointer;
 }
-.nav_ul_1>li>span::after{
+.nav-ul-1>li>span::after{
     display: inline-block;
     content: '▼';
     margin-left: 5px;
@@ -83,15 +83,15 @@
     font-size: 0.9em;
 }
 
-.nav_ul_1>li:hover>span::after{
+.nav-ul-1>li:hover>span::after{
     content: "▲";
 }
 
-.nav_ul_1>li:hover .nav_ul_2{
+.nav-ul-1>li:hover .nav-ul-2{
     display: block;
 }
 
-.nav_ul_2{
+.nav-ul-2{
     overflow:auto;
     position: absolute;
     background-color: #f9f9f9;
@@ -99,15 +99,16 @@
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     min-width: max-content;
     border-radius: 0.3rem;
+    z-index: 70;
     display: none;
 }
-.nav_ul_2>li>a{
+.nav-ul-2>li>a{
     display: block;
     text-align: center;
     padding: 0.8rem;
     transition: all 0.3s;
 }
-.nav_ul_2>li>a:hover{
+.nav-ul-2>li>a:hover{
     background-color: lightblue;
 }
 
@@ -132,18 +133,7 @@
     align-items: center;
     position: relative;
 }
-.search-btn{
-    width: 2rem;
-    height: 2rem;
-    background-color: transparent;
-    flex: 0 0 auto;
-}
-.search-clear-btn{
-    width: 2rem;
-    height: 2rem;
-    background-color: transparent;
-    flex: 0 0 auto;
-}
+
 .search-box input{
     border: none;
     background-color: transparent;
@@ -161,9 +151,10 @@
     position: relative;
     border-radius: 50%;
 }
-.header-avator:hover .avator_ul{
+.header-avator:hover .avator-ul{
     display: block;
     right: 0;
     margin-top: 2.3rem;
+    cursor: pointer;
 }
 
