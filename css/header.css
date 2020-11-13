@@ -158,3 +158,18 @@
     cursor: pointer;
 }
 
+@media (max-width: 672px){
+    .header-search{
+        display: none;
+    }
+    #main{
+        background-color: rgb(17, 206, 231);
+        background-image: none;
+    }
+}
+@media (max-width: 330px){
+    .logo{
+        display: none;
+    }
+}
+
