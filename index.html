@@ -34,7 +34,7 @@
                 <li class>
                     <span>管理</span>
                     <ul class="nav-ul-2">
-                        <li><a>添加卡片</a></li>
+                        <li><a onclick="AddCard();">添加卡片</a></li>
                     </ul>
                 </li>
                 <li class>
@@ -68,7 +68,7 @@
     </div>
 
     <div id="main">
-        <div class="card">
+        <div class="card" onclick="RemoveCard(this);">
             <div class="card-header">
                 <h2>最近浏览</h2>
             </div>
@@ -87,9 +87,9 @@
             </div>
         </div>
 
-        <div class="card">
+        <div class="card" onclick="RemoveCard(this);">
             <div class="card-header">
-                <h2>最近浏览</h2>
+                <h2>收藏</h2>
             </div>
             <div class="card-control">
                 <button class="all-btn control-btn clear-btn">
