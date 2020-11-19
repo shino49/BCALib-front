@@ -34,7 +34,8 @@
                 <li class>
                     <span>管理</span>
                     <ul class="nav-ul-2">
-                        <li><a onclick="AddCard();">添加卡片</a></li>
+                        <li><a onclick="AddCard('side');">添加侧边栏</a></li>
+                        <li><a onclick="AddCard('main');">添加主栏</a></li>
                     </ul>
                 </li>
                 <li class>
@@ -68,40 +69,43 @@
     </div>
 
     <div id="main">
-        <div class="card">
-            <div class="card-header">
-                <h2>最近浏览</h2>
-            </div>
-            <div class="card-control">
-                <button class="all-btn control-btn clear-btn" onclick="RemoveCard(this);">
-                    <img src="img/clear_btn1.svg" />
-                </button>
-            </div>
-            <div class="card-content">
-                <ul class="book-list">
-                    <li>
-                        <div class="book-cover"></div>
-                        <div class="book-name"></div>
-                    </li>
-                </ul>
+        <div id="side-card-area">
+            <div class="side-card" draggable="true">
+                <div class="card-header">
+                    <h2>最新入库</h2>
+                </div>
+                <div class="card-control">
+                    <button class="all-btn control-btn clear-btn" onclick="RemoveCard(this);">
+                        <img src="img/clear_btn1.svg" />
+                    </button>
+                </div>
+                <div class="card-content">
+                    <ul class="book-list-small">
+                        <li>
+                            <span class="book-name"></span>
+                            <span class="book-info"></span>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
-
-        <div class="card">
-            <div class="card-header">
-                <h2>收藏</h2>
-            </div>
-            <div class="card-control">
-                <button class="all-btn control-btn clear-btn" onclick="RemoveCard(this);">
-                    <img src="img/clear_btn1.svg" />
-                </button>
-            </div>
-            <div class="card-content">
-                <ul class="book-list">
-                    <li>
-                        <div class="book-cover"></div>
-                    </li>
-                </ul>
+        <div id="main-card-area">
+            <div class="card">
+                <div class="card-header">
+                    <h2>最近浏览</h2>
+                </div>
+                <div class="card-control">
+                    <button class="all-btn control-btn clear-btn" onclick="RemoveCard(this);">
+                        <img src="img/clear_btn1.svg" />
+                    </button>
+                </div>
+                <div class="card-content">
+                    <ul class="book-list-big">
+                        <li>
+                            <div class="book-cover"></div>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
     </div>
