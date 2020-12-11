@@ -83,7 +83,7 @@
     font-size: 0.9em;
 }
 
-.nav-ul-1>li:hover>span::after{
+.nav-ul-1>li:hover>span::after{      
     content: "▲";
 }
 
